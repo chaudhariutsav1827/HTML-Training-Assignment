@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid" style="background-color: #FFFFFF;">
+    <nav class="navbar navbar-expand-lg " style="background-color: white;">
+        <div class="container-fluid">
+
+            <a href="#"><img src="./images/menu-bar.svg" class="me-2"></a>
+            <img src="./images/header-logo.svg">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <form class="d-flex ms-3" role="search">
+                        <i class="bi bi-search my-auto"></i>
+                        <input class="form-control me-2 border-0 " style="width: 60vw; background-color: white;"
+                            type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                </ul>
+                <div class="d-flex">
+                    <img src="images/notification-icon.svg">
+                    <img src="./images/profile.png" class="ms-3">
+
+
+                    <div class="dropdown-center my-auto">
+                        <a class="nav-link dropdown-toggle  ms-3 me-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            John Doe
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another </a></li>
+                            <li><a class="dropdown-item" href="#">Something </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-2 mt-4">
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                            <img src="images/dashboard-active.svg" style="width: 2vw;">
+                            <span class="ms-2">Dashboard</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/graph-default.svg" style="width: 2vw;">
+                            <span class="ms-2">Analysis</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/inbox-default.svg" style="width: 2vw;"><span class="ms-2">Inbox</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/clock-default.svg" style="width: 2vw;">
+                            <span class="ms-2">History</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/user-default.svg" style="width: 2vw;">
+                            <span class="ms-2">Users</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/maintenance-default.svg" style="width: 2vw;">
+                            <span class="ms-2">Maintenance</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/setting-default.svg" style="width: 2vw;">
+                            <span class="ms-2 mt-3">Setting</span></a>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+        </div>
+        <div class="col-lg-10">
+            <h3 class="">Analysis</h3>
+            <form class="row g-3">
+                <label for="inputEmail4" class="form-label mt-4">One Column</label>
+                <div class="col-md-12">
+                    <input type="email" placeholder="Name" class="form-control " id="name">
+                    <select id="inputState" class="form-select mt-3">
+                        <option selected>Dropdown</option>
+                        <option>...</option>
+                    </select>
+                    <input type="text" placeholder="Multiple line" class="form-control form-control-lg mt-3"
+                        id="inputAddress">
+                </div>
+
+
+
+                <label for="inputPassword4" class="form-label">Two Column</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <div class="col-md-6">
+                    <select id="inputState" class="form-select ">
+                        <option selected>Dropdown</option>
+                        <option>...</option>
+                    </select>
+                </div>
+
+                <label for="inputPassword4" class="form-label">Three Column</label>
+                <div class="col-md-4 ">
+                    <label>focus</label>
+                    <input type="text" class="form-control input-lg" id="name" placeholder="Focus">
+                </div>
+                <div class="col-md-4">
+                    <label>password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <div class="col-md-4">
+                    <label>disabled</label>
+                    <input type="text" class="form-control" id="inputPassword4" value="Johndoe">
+                </div>
+
+                <!--Forth column-->
+                <label for="inputPassword4" class="form-label">Four Column</label>
+                <div class="col-md-3 form-group">
+                    <label>designation</label>
+                    <input type="text" class="form-control input-lg" id="name" value="UI designer">
+                </div>
+                <div class="col-md-3">
+                    <label>name</label>
+                    <input type="" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="col-md-3">
+                    <label>username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="col-md-3">
+                    <label><input type="hidden"></label>
+                    <select id="inputState" class="form-select ">
+                        <option selected>Select</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <!--/Forth column-->
+
+                <!--Other elements-->
+                <div class="col-md-4 ">
+                    <label>File upload</label>
+                    <input type="file" style="border: 1px solid #C8242F;border-radius: 18px;" class="form-control" id="customFile">
+                </div>
+                <!--/Other elements-->
+
+
+                <!--Radio button-->
+
+                
+                <label>Radio Button</label>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                    <label class="form-check-label" for="gridRadios1">
+                      Option 1
+                    </label>
+                </div>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input"style="background-color: #C8242F;" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Option 2
+                    </label>
+                </div>
+
+
+                <!--/Radio button-->
+
+
+                 <!--Check box-->
+
+                
+                 <label>Check box</label>
+                 <div class="form-check col-md-2">
+                    <input class="form-check-input"  type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Option 1
+                    </label>
+                  </div>
+                  <div class="form-check col-md-2">
+                    <input class="form-check-input" style="background-color: #C8242F;" type="checkbox" value="" id="flexCheckDefault" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Option 2
+                    </label>
+                </div>
+                 <!--/Check box-->
+
+                 <!--Snackbar-->
+
+
+                 <label for="inputPassword4" class="form-label">Snackbar</label>
+                 <div class="col-md-6">
+                     <input type="text" class="form-control" id="name" value="This is an error message">
+                 </div>
+                 <div class="col-md-6">
+                     <input type="text" class="form-control" id="username" placeholder="This is an information message">
+                 </div>
+                 <div class="col-md-6">
+                     <input type="password" class="form-control" id="inputPassword4" placeholder="This is a Warning message">
+                 </div>
+                 <div class="col-md-6">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="This is a Success message">
+                 </div>
+
+                 <!--/Snackbar-->
+
+
+                 <!--Call to action-->
+
+
+                 <label for="inputPassword4" class="form-label">Call to action</label>
+                 <div class="col-md-2">
+                     <button class="btn-btn-primary" >primary</button>
+                 </div>
+                 <div class="col-md-2">
+                     <button class="btn-btn-primary" >primary</button>
+                 </div>
+
+                 <!--Call to action-->
+
+
+
+
+
+              
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
