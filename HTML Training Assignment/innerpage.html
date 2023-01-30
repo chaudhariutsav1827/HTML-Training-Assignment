@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="container-fluid" style="background-color: #FFFFFF;">
@@ -89,24 +90,23 @@
             </nav>
             <!-- Sidebar -->
         </div>
-        <div class="col-lg-10">
-            <h3 class="">Analysis</h3>
-            <form class="row g-3">
-                <label for="inputEmail4" class="form-label mt-4">One Column</label>
-                <div class="col-md-12">
-                    <input type="email" placeholder="Name" class="form-control " id="name">
+        <div class="col-lg-10 " style="background-color: #FAFAFA;">
+            <h3 class="mb-3 ms-2">Analysis</h3>
+            <form class="row g-3 mx-3 my-4" name="frm" style="background-color: #FFFFFF;">
+                <label for="inputEmail4" class="form-label fst-bold mt-4"><strong>One Column</strong></label>
+                <div class="col-md-12 mt-2">
+                    <input type="text" placeholder="Name" class="form-control " id="name">
                     <select id="inputState" class="form-select mt-3">
                         <option selected>Dropdown</option>
                         <option>...</option>
                     </select>
-                    <input type="text" placeholder="Multiple line" class="form-control form-control-lg mt-3"
-                        id="inputAddress">
+                    <textarea class="form-control mt-3" id="multipleline" placeholder="Multiple line" rows="3"></textarea>
                 </div>
 
 
 
-                <label for="inputPassword4" class="form-label">Two Column</label>
-                <div class="col-md-6">
+                <label for="inputPassword4" class="form-label mt-4"><strong>Two Column</strong></label>
+                <div class="col-md-6 mt-3">
                     <input type="text" class="form-control" id="name" placeholder="Name">
                 </div>
                 <div class="col-md-6">
@@ -116,14 +116,14 @@
                     <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                 </div>
                 <div class="col-md-6">
-                    <select id="inputState" class="form-select ">
+                    <select id="inputState" class="form-select">
                         <option selected>Dropdown</option>
                         <option>...</option>
                     </select>
                 </div>
 
-                <label for="inputPassword4" class="form-label">Three Column</label>
-                <div class="col-md-4 ">
+                <label for="inputPassword4" class="form-label mt-4"><strong>Three Column</strong></label>
+                <div class="col-md-4 mt-3">
                     <label>focus</label>
                     <input type="text" class="form-control input-lg" id="name" placeholder="Focus">
                 </div>
@@ -137,17 +137,17 @@
                 </div>
 
                 <!--Forth column-->
-                <label for="inputPassword4" class="form-label">Four Column</label>
-                <div class="col-md-3 form-group">
-                    <label>designation</label>
+                <label for="inputPassword4" class="form-label mt-4"><strong>Four Column</strong></label>
+                <div class="col-md-3 form-group mt-3">
+                    <label style="transform:translate(10px,10px);">designation</label>
                     <input type="text" class="form-control input-lg" id="name" value="UI designer">
                 </div>
                 <div class="col-md-3">
-                    <label>name</label>
+                    <label><input type="hidden"></label>
                     <input type="" class="form-control" id="name" placeholder="Name">
                 </div>
                 <div class="col-md-3">
-                    <label>username</label>
+                    <label style="transform:translate(10px,10px);">username</label>
                     <input type="text" class="form-control" id="username" placeholder="Username">
                 </div>
                 <div class="col-md-3">
@@ -160,9 +160,10 @@
                 <!--/Forth column-->
 
                 <!--Other elements-->
-                <div class="col-md-4 ">
+                <label for="inputPassword4" class="form-label mt-4"><strong>Other Design Element</strong></label>
+                <div class="col-md-4 mt-2 ">
                     <label>File upload</label>
-                    <input type="file" style="border: 1px solid #C8242F;border-radius: 18px;" class="form-control" id="customFile">
+                    <input type="file"  class="  custom-file-input">
                 </div>
                 <!--/Other elements-->
 
@@ -170,19 +171,15 @@
                 <!--Radio button-->
 
                 
-                <label>Radio Button</label>
-                <div class="form-check col-md-2">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
-                    <label class="form-check-label" for="gridRadios1">
-                      Option 1
-                    </label>
-                </div>
-                <div class="form-check col-md-2">
-                    <input class="form-check-input"style="background-color: #C8242F;" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      Option 2
-                    </label>
-                </div>
+                <label><strong>Radio Button</strong></label>
+                <div class="row">
+                    <label class="radio-inline col-md-2 mt-2">
+                       <input type="radio" value="">&MediumSpace;  Option 1
+                     </label>
+                     <label class="radio-inline col-md-2 mt-2">
+                       <input type="radio" value="">&MediumSpace; Option 2
+                     </label>
+                   </div>
 
 
                 <!--/Radio button-->
@@ -191,36 +188,32 @@
                  <!--Check box-->
 
                 
-                 <label>Check box</label>
-                 <div class="form-check col-md-2">
-                    <input class="form-check-input"  type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Option 1
-                    </label>
-                  </div>
-                  <div class="form-check col-md-2">
-                    <input class="form-check-input" style="background-color: #C8242F;" type="checkbox" value="" id="flexCheckDefault" checked>
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Option 2
-                    </label>
+                 <label><strong>Check box</strong></label>
+                 <div class="row">
+                 <label class="checkbox-inline col-md-2 mt-2">
+                    <input type="checkbox" value="">&MediumSpace;  Option 1
+                  </label>
+                  <label class="checkbox-inline col-md-2 mt-2">
+                    <input type="checkbox" value="">&MediumSpace; Option 2
+                  </label>
                 </div>
                  <!--/Check box-->
 
                  <!--Snackbar-->
 
 
-                 <label for="inputPassword4" class="form-label">Snackbar</label>
-                 <div class="col-md-6">
-                     <input type="text" class="form-control" id="name" value="This is an error message">
+                 <label for="inputPassword4" class="form-label"><strong>Snackbar</strong></label>
+                 <div class="col-md-6 ">
+                     <input type="text" class="form-control " id="name" value="      This is an error message" style="background-image: url(./images/error-icon.svg); background-repeat: no-repeat;border-color: #FF3535; color: #FF3535;">
                  </div>
                  <div class="col-md-6">
-                     <input type="text" class="form-control" id="username" placeholder="This is an information message">
+                     <input type="text" class="form-control" id="username" value="      This is an information message" style="background-image: url(./images/info-icon.svg); background-repeat: no-repeat;border-color: #00B9E1; color: #00B9E1;">
                  </div>
                  <div class="col-md-6">
-                     <input type="password" class="form-control" id="inputPassword4" placeholder="This is a Warning message">
+                     <input type="text" class="form-control" id="inputPassword4" value="      This is a Warning message" style="background-image: url(./images/warning-icon.svg); background-repeat: no-repeat;border-color: #FFA800; color: #FFA800;">
                  </div>
                  <div class="col-md-6">
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="This is a Success message">
+                    <input type="text" class="form-control" id="inputPassword4" value="      This is a Success message" style="background-image: url(./images/success-icon.svg); background-repeat: no-repeat;border-color: #00AF27; color: #00AF27;">
                  </div>
 
                  <!--/Snackbar-->
@@ -229,17 +222,29 @@
                  <!--Call to action-->
 
 
-                 <label for="inputPassword4" class="form-label">Call to action</label>
+                 <label class="form-label"><strong>Call to action</strong></label>
                  <div class="col-md-2">
-                     <button class="btn-btn-primary" >primary</button>
+                    <button type="button" class="custom-button">Primary</button>
                  </div>
                  <div class="col-md-2">
-                     <button class="btn-btn-primary" >primary</button>
+                     <button type="button" class="custom-button" >Secondary</button>
                  </div>
 
-                 <!--Call to action-->
+                 <!--/Call to action-->
 
+                 <!--Tabs-->
 
+                 <label class="form-label"><strong>Tabs</strong></label>
+                 <div class="nav ">
+                    <div class="nav-item">
+                        <a href="#" class="ms-3" style="color: #ADADAD; text-decoration: none;">Tab1</a>
+                        <a href="#" class="ms-3" style="color: #ADADAD; text-decoration: none;">Tab2</a>
+                        <a href="#" class="ms-3" style="color: #ADADAD; text-decoration: none;">Tab3</a>
+                    </div>
+                    <div class="row mt-1 ms-2" style="height: 3px; width: 75vw; background-color: #ADADAD; "></div>
+                    <div class="row mt-1 ms-2"style="color:#3E3E3E">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit exercitationem explicabo itaque, animi facere dolorum? Possimus voluptates qui iusto culpa minima nulla suscipit ratione excepturi aliquid, sit eligendi maxime nobis.</div>
+                 </div>
+                 <!--/Tabs-->
 
 
 
